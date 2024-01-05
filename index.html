@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://kit.fontawesome.com/042d05c8ea.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: content-box;
+    }
+
+
+    #jcb_header {
+        position: relative;
+        height: 70px;
+        width: 100%;
+        background-color: rgb(255, 153, 0);
+    }
+
+    #jcb_logo {
+        position: absolute;
+        left: 10rem;
+        top: 20px;
+        width: 150px;
+        height: 60px;
+        filter: brightness(1) opacity(2);
+
+
+
+    }
+
+    #operator_jcb {
+        position: absolute;
+        left: 200px;
+        top: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #jcb_contact {
+        position: absolute;
+        right: 150px;
+        top: 10px;
+        color: aliceblue;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #jcb_phone {
+        position: absolute;
+        right: 130px;
+        top: 35px;
+        color: aliceblue;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #logo_phonejcb {
+        position: absolute;
+        right: 250px;
+        top: 18px;
+        font-size: 30px;
+        color: whitesmoke;
+    }
+
+    .next_jcbdiv {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(58, 57, 57);
+        position: relative;
+    }
+
+    #address_jcb {
+        position: absolute;
+        color: rgb(242, 149, 9);
+        font-family: sans-serif;
+        left: 40px;
+        line-height: 50px;
+    }
+
+    #location_logo {
+        position: absolute;
+        color: rgb(242, 149, 9);
+        line-height: 50px;
+        left: 10px;
+    }
+
+    #location_jcb {
+        position: absolute;
+        color: rgb(242, 149, 9);
+        line-height: 50px;
+        left: 105px;
+    }
+
+    #social_fb {
+        position: absolute;
+        font-size: 25px;
+        right: 310px;
+        line-height: 50px;
+    }
+
+    #social_insta {
+        position: absolute;
+        font-size: 25px;
+        right: 360px;
+        line-height: 50px;
+    }
+
+    #social_tube {
+        position: absolute;
+        font-size: 25px;
+        right: 410px;
+        line-height: 50px;
+    }
+
+    #find_location {
+        position: absolute;
+        left: 500px;
+        top: 7px;
+        width: 70px;
+        height: 30px;
+    }
+
+    @media(max-width:414px) {
+        #jcb_header {
+            position: relative;
+
+        }
+
+        /* #jcb_logo {
+            position: absolute;
+            width: 90px;
+            height: 35px;
+            left: 0px;
+            top: 30px;
+          
+        } */
+
+        #operator_jcb {
+            position: absolute;
+            font-size: 13px;
+            left: 80px;
+            top: 5px;
+            word-spacing: -1px;
+
+        }
+
+        #jcb_contact {
+            font-size: 13px;
+            position: absolute;
+            top: 35.5px;
+            left: 190px;
+
+        }
+
+        #jcb_phone {
+            position: absolute;
+            top: 35px;
+            left: 260px;
+
+        }
+
+        #find_location {
+            position: absolute;
+            top: 2px;
+            left: 310px;
+            font-size: 10px;
+            width: 50px;
+            height: 20px;
+
+        }
+
+        #logo_phonejcb {
+            font-size: large;
+            position: absolute;
+            top: 2rem;
+            left: 10rem;
+        }
+
+        #social_fb {
+
+            position: absolute;
+            left: 190px;
+            top: 8px;
+            font-size: 20px;
+        }
+
+        #social_insta {
+            position: absolute;
+            left: 163px;
+            top: 8px;
+            font-size: 20px;
+        }
+
+        #social_tube {
+            position: absolute;
+            left: 130px;
+            top: 8px;
+            font-size: 20px;
+        }
+
+        #location_logo {
+            position: absolute;
+            left: 0px;
+            bottom: -2PX;
+        }
+
+        #address_jcb {
+            font-size: 12px;
+            position: absolute;
+            left: 20px;
+            bottom: -2PX;
+        }
+
+        #location_jcb {
+            position: absolute;
+            font-size: 12px;
+            left: 70px;
+            bottom: -2PX;
+        }
+
+        #mcm_logo {
+            margin-left: -5.5rem;
+
+        }
+
+    }
+
+    .jcb_div3 {
+        position: relative;
+        width: 100%;
+
+
+    }
+
+    #back_image {
+        position: absolute;
+        width: 100%;
+        height: 800px;
+        filter: blur(2px);
+    }
+
+    #white_box1 {
+        position: relative;
+        width: 53rem;
+        height: 35rem;
+        background-color: white;
+        left: 35rem;
+        top: 8rem;
+        border-radius: 10px;
+        border: 5px solid rgb(3, 3, 3);
+        filter: blur(5);
+    }
+
+    #white_BOXWORK2 {
+        font-size: 26PX;
+        position: absolute;
+        left: 38rem;
+        top: 9rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 187, 0);
+        font-weight: 600;
+    }
+
+    #jcb_imagebx {
+        position: absolute;
+        width: 430px;
+        height: 350px;
+        left: 60.5rem;
+        top: 20.5rem;
+        border-right: 20px solid rgb(255, 187, 0);
+        border-bottom: 20px solid rgb(255, 187, 0);
+    }
+
+    #div_desgine {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        border-top: 20px solid rgb(255, 187, 0);
+        border-left: 20px solid rgb(255, 187, 0);
+        left: 35rem;
+        top: 8rem;
+    }
+
+    #form_jcb {
+        width: 350px;
+        height: 400px;
+        position: absolute;
+        background-color: #d2d0cd;
+        left: 35rem;
+        top: 10rem;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 187, 0);
+    }
+
+    #white_BOXWORK3 {
+        position: absolute;
+        left: 63rem;
+        top: 9rem;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #jcb_line {
+        width: 380px;
+        height: 2px;
+        position: absolute;
+        background-color: rgb(255, 187, 0);
+        left: 63rem;
+        top: 11rem;
+    }
+
+    #skill_sectionj {
+        top: 0px;
+        position: absolute;
+        width: 55rem;
+        height: 53rem;
+        background-color: #2e2e2e;
+        z-index: -1;
+    }
+
+    #skill_INDJCB {
+        position: absolute;
+        color: azure;
+        font-size: 30PX;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 10rem;
+        left: 7rem;
+    }
+
+    #skill_INDJCB2 {
+        position: absolute;
+        color: azure;
+        font-size: 25PX;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 13rem;
+        ;
+        left: 7rem;
+    }
+
+    #jcb_line2 {
+        width: 2px;
+        height: 440px;
+        position: absolute;
+        background-color: rgb(255, 187, 0);
+        left: 5rem;
+        top: 10rem;
+    }
+
+    #jcb_words {
+        position: absolute;
+        font-size: 20px;
+        color: azure;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 17rem;
+        left: 7rem;
+    }
+
+    #jcb_words2 {
+        position: absolute;
+        font-size: 17px;
+        color: azure;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 24rem;
+        left: 7rem;
+    }
+
+    #roll_jcb {
+        position: absolute;
+        font-size: 20px;
+        color: rgb(255, 187, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        top: 33rem;
+        left: 7rem;
+    }
+
+    #arrow_logo {
+        font-size: 30px;
+        position: absolute;
+        left: 27Rem;
+        top: 32.9rem;
+        color: rgb(255, 187, 0);
+    }
+
+    /* form work */
+    #start_form {
+        position: absolute;
+        left: 43rem;
+        font-size: 25px;
+        color: rgb(30, 30, 29);
+        top: 23rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .form {
+        position: absolute;
+        width: 300px;
+        height: 288px;
+        left: 38rem;
+        top: 25rem;
+        border: 2px solid #ffcc00;
+    }
+
+    #name_jcb {
+        position: absolute;
+        left: 70px;
+        top: 14.5px;
+        width: 13REM;
+        height: 2rem;
+    }
+
+    #text_MAIL {
+        position: absolute;
+        top: 75px;
+        left: 5px;
+        color: rgb(255, 179, 0);
+    }
+
+    #EMAIL_jcb {
+        position: absolute;
+        left: 70px;
+        top: 68px;
+        width: 13REM;
+        height: 2rem;
+    }
+
+    #text_PHON {
+        position: absolute;
+        top: 130px;
+        left: 5px;
+        color: rgb(255, 179, 0);
+    }
+
+    #PHONE_jcb {
+        position: absolute;
+        left: 70px;
+        top: 122px;
+        width: 13REM;
+        height: 2rem;
+    }
+
+    #form_sub {
+        position: absolute;
+        color: white;
+        background-color: rgb(255, 204, 0);
+        top: 250px;
+        left: 100px;
+        width: 110px;
+        height: 35px;
+    }
+
+    #text_name {
+        position: absolute;
+        top: 20px;
+        left: 5px;
+        color: rgb(255, 179, 0);
+    }
+
+    .multi_gender {
+        position: absolute;
+        top: 200px;
+        left: 50px;
+        color: rgb(255, 179, 0);
+    }
+
+    #mcm_logo {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        margin-left: -5rem;
+    }
+
+    #ceriti_jcb {
+        position: absolute;
+        left: 67REM;
+        top: 11REM;
+        font-size: 20px;
+    }
+
+    #jcb_lineERT {
+        width: 310px;
+        height: 2px;
+        position: absolute;
+        background-color: rgb(255, 187, 0);
+        left: 64.5rem;
+        top: 13rem;
+    }
+
+    .list_course {
+        position: absolute;
+        left: 37rem;
+        top: 11rem;
+    }
+
+    #my_list {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 1rem;
+    }
+
+    #medal_jcb {
+        position: absolute;
+        left: 65rem;
+        top: 11.2rem;
+        font-size: 20px;
+    }
+
+
+    @media(max-width:415px) {
+        .jcb_div3 {
+            position: relative;
+            width: 97.5%;
+            left: 0PX;
+        }
+
+        #black_box3 {
+            display: none;
+        }
+
+        #skill_INDJCB {
+            display: none;
+        }
+
+        #skill_INDJCB2 {
+            display: none;
+        }
+
+        #jcb_words {
+            display: none;
+        }
+
+        #jcb_words2 {
+            display: none;
+        }
+
+        #roll_jcb {
+            display: none;
+        }
+
+        #jcb_line2 {
+            display: none;
+        }
+
+        #skill_sectionj {
+            display: none;
+        }
+
+        #white_box1 {
+            position: absolute;
+            left: 0rem;
+            width: 100%;
+            height: 30REM;
+            display: none;
+        }
+
+        #div_desgine {
+            display: none;
+            position: absolute;
+            left: 0rem;
+            height: 100px;
+            width: 100px;
+        }
+
+        #jcb_imagebx {
+            position: absolute;
+            left: 0.3rem;
+
+            width: 21.5rem;
+            height: 16.16REM;
+            top: 28REM;
+
+        }
+
+        #white_BOXWORK2 {
+            position: absolute;
+            left: 1.5rem;
+            top: 0rem;
+            font-size: 23px;
+        }
+
+        #white_BOXWORK3 {
+            position: absolute;
+            left: 2.7rem;
+            font-size: 18px;
+            top: 2.5rem;
+
+        }
+
+        #jcb_line {
+            position: absolute;
+            left: 1.5rem;
+            width: 24rem;
+            top: 6.5rem;
+            display: none;
+        }
+
+        #jcb_lineERT {
+            display: none;
+        }
+
+        #ceriti_jcb {
+            position: absolute;
+            left: 6rem;
+            top: 25rem;
+
+            z-index: 1;
+            font-size: 18PX;
+        }
+
+        #medal_jcb {
+            position: absolute;
+            left: 4rem;
+            display: one;
+            top: 25rem;
+            z-index: 1;
+        }
+
+        #my_list {
+            position: absolute;
+            display: none;
+        }
+
+        #start_form {
+            position: absolute;
+            left: 150px;
+            top: 6REM;
+            font-size: 25px;
+            display: none;
+        }
+
+        .form {
+            position: absolute;
+            left: 2rem;
+            height: 19REM;
+            top: 5REM;
+            background-color: #2e2e2e;
+        }
+
+        #arrow_logo {
+            position: absolute;
+            left: 0rem;
+            display: none;
+        }
+    }
+
+
+
+    /* lastworl */
+
+
+
+    .last_jcbwork {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background: #181717;
+        top: 17.3rem;
+    }
+
+    #work_1 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: #2e2e2e;
+        left: 8rem;
+        top: 1.5rem;
+        border: 1px solid whitesmoke;
+    }
+
+    #work_2 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: #2e2e2e;
+        left: 30rem;
+        top: 1.5rem;
+        border: 1px solid whitesmoke;
+    }
+
+    #work_3 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: #2e2e2e;
+        left: 55rem;
+        top: 1.5rem;
+        border: 1px solid whitesmoke;
+    }
+
+    #work_4 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: #2e2e2e;
+        right: 8rem;
+        top: 1.5rem;
+        border: 1px solid whitesmoke;
+    }
+
+    #mid_jcbwork {
+        width: 120px;
+        height: 120px;
+        border: 1px solid rgb(221, 219, 219);
+        position: absolute;
+        top: 14px;
+        left: 14px;
+    }
+
+    #mid_jcbwork:hover {
+        background-color: #e1630e;
+    }
+
+    #mechanic_logo {
+        color: whitesmoke;
+        font-size: 50px;
+        position: absolute;
+        top: 1.5rem;
+        left: 2rem;
+    }
+
+    .success_stor {
+        position: relative;
+        width: 100%;
+        height: 4rem;
+        top: 48.5rem;
+        background-color: #fef8f8;
+    }
+
+    .success_stor2 {
+        position: relative;
+        width: 100%;
+        height: 0.5rem;
+        top: 60.5rem;
+        background-color: #0f0f0e;
+        display: none;
+    }
+
+    #JCB_PRODUCT {
+        position: absolute;
+        color: rgb(44, 43, 43);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 4rem;
+        left: 15rem;
+        top: -500px;
+        background-color: #e1630e;
+    }
+
+    #JCB_PRODUCT2 {
+        position: absolute;
+        color: rgb(237, 140, 14);
+        font-family: Arial, Helvetica, sans-serif;
+        left: 48.6rem;
+        line-height: 4rem;
+        top: -500px;
+        background-color: #2e2e2e;
+    }
+
+    .footer_jcb {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        background-color: rgb(242, 149, 9);
+        top: 17.5rem;
+    }
+
+    #foot_id {
+        position: absolute;
+        width: 250px;
+        height: 150px;
+        left: 30px;
+        top: 50px;
+    }
+
+    .fotter_journey {
+        position: absolute;
+        color: #0f0f0e;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 3rem;
+        left: 20rem;
+    }
+
+    .slide_show {
+        position: relative;
+        left: 10REM;
+        width: 80%;
+        background-color: rgb(17, 17, 17);
+        top: 17.2rem;
+    }
+
+    #last_content {
+        position: absolute;
+        display: flex;
+        list-style: none;
+        top: 170px;
+        left: 17rem;
+    }
+
+    #jcb_flex {
+        margin-left: 25px;
+    }
+
+    #jcb_limit {
+        left: 78.5rem;
+        position: absolute;
+        top: 10.5rem;
+    }
+
+    #last_icon {
+        position: absolute;
+        display: flex;
+        list-style: none;
+        top: 100px;
+        left: 75rem;
+    }
+
+    #last_social {
+        margin-left: 25px;
+        font-size: 30px;
+    }
+
+    #jcb_call {
+        position: absolute;
+        margin-left: 80.2rem;
+        font-size: 25px;
+        margin-top: 3rem;
+    }
+
+    @media(max-width:415px) {
+        .success_stor{position: relative; top: 400PX ;left: -10PX; }
+        #JCB_PRODUCT {
+            position: absolute;
+            left: 10px;
+            top: -8rem;
+            font-size: 20PX;
+            width: 100%;
+            background-color: #2e2e2e;
+            color: #e1630e;
+        }
+
+        #JCB_PRODUCT2 {
+            position: absolute;
+            left: 10PX;
+            top: -4rem;
+            font-size: 20px;
+            width: 100%;
+            text-align: right;
+           
+        }
+
+        .last_jcbwork {
+            position: relative;
+            top: 21rem;
+            height: 51.5rem;
+        }
+
+        #work_1 {
+            position: absolute;
+            left: 0px;
+            top: 3rem;
+        }
+
+        #work_2 {
+            position: absolute;
+            left: 0px;
+            top: 15rem;
+        }
+
+        #work_3 {
+            position: absolute;
+            left: 0px;
+            top: 27rem;
+        }
+
+        #work_4 {
+            position: absolute;
+            left: 0px;
+            top: 39rem;
+        }
+
+        .footer_jcb {
+            position: relative;
+            top: 21.2rem;
+            height: 400px; 
+           
+        }
+
+        #foot_id {
+            position: absolute;
+            width: 150px;
+            height: 80px;
+            left: 10PX;
+        }
+
+        .fotter_journey {
+            position: absolute;
+            left: 1.5rem;
+            font-size: 20px;
+            top: 0px;
+        }
+
+        #jcb_call {
+            position: absolute;
+            margin-left: 11rem;
+            margin-top: 4rem;
+        }
+
+        #last_content {
+            position: absolute;
+            left: -50PX;
+        }
+
+        #last_icon {
+            position: absolute;
+            left: 25PX;
+            top: 17rem;
+        }
+
+        #jcb_limit {
+            position: absolute;
+            left: 0px;
+            top: 22rem;
+            left: 5rem;
+        }
+
+        .slide_show {
+            position: relative;
+            top: 17rem;
+            left: 0rem;
+            background-color: #e1b209;
+            width: 100%;
+            height: 1000px;
+            display: none;
+           
+           
+        }
+
+        .hash_256 {
+            margin-top: 28.5rem;
+            font-size: 5px;
+        }
+
+        #jcb_lives {margin-left: -300px;
+            font-size:10px;display: none;
+           
+            
+        }
+        #jcb_logo{position: absolute; left: 120px; }
+        #jcb_flex{margin-left: 15PX;}
+       
+    }
+
+    #jcb_lives {
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 100px;
+        font-size: 30px;
+        text-align: center;
+       left: 25rem;
+    }
+
+    .hash_256 {
+       
+        position: relative;
+        height: 100px;
+        background-color: rgb(255, 179, 0);
+        top: 17.2rem;
+
+
+
+
+    }
+
+    #mcm_logo {
+        position: absolute;
+        top: -4px;
+        left: 5rem;
+        width: 90px;
+        height: 85px;
+    }
+   
+
+
+
+    /* work late */
+</style>
+
+<body>
+
+    <!--------------------------------------- jcb header sachin bhartiya ----------------------------->
+    <div id="jcb_header">
+        <img src="mcm_logo-removebg-preview (1).png" id="mcm_logo">
+
+        <p id="jcb_contact">CONTACT </p>
+        <p id="jcb_phone">8544731813</p>
+        <h1 id="operator_jcb">AUTHORIZED OPERATOR TRAINNING CENTER</h1>
+
+        <p id="logo_phonejcb"><i class="fa-solid fa-phone fa-bounce"></i></p>
+    </div>
+
+    <!-------------------------- address div social handle ---------------------------------->
+
+    <div class="next_jcbdiv">
+        <p id="address_jcb">Address-</p>
+        <p id="location_logo"><i class="fa-solid fa-location-dot"></i></p>
+        <p id="location_jcb">Dharamshala ,Khanyara,Near Patola Ground</p>
+        <a href="https://maps.app.goo.gl/BNMKNtvZQTEdrQmC8"><button id="find_location">Find us</button></a>
+        <p id="social_fb"><i class="fa-brands fa-facebook fa-shake" style="color: #e1630e;"></i></p>
+        <p id="social_insta"><i class="fa-brands fa-instagram fa-shake" style="color: #e66a05;"></i></p>
+        <p id="social_tube"><i class="fa-brands fa-youtube fa-shake" style="color: #e56a06;"></i></p>
+    </div>
+
+
+
+    <!-------------------------------------------- jcb image div3 ------------------------------->
+    <div class="jcb_div3">
+
+        <div id="white_box1"></div>
+        <p id="white_BOXWORK2">JCB BACKHOE LOADER 3DX </p>
+        <p id="white_BOXWORK3">1 MONTH TRAINNING COURSE</p>
+
+        <p id="ceriti_jcb"> CERTIFICATION PROGRAM</p>
+        <p id="medal_jcb"><i class="fa-sharp fa-solid fa-medal" style="color: #e1b209;"></i></p>
+        <div id="jcb_lineERT"></div>
+
+        <img src="jcb-machine.jpg" id="jcb_imagebx">
+        <div id="div_desgine"></div>
+
+        <p id="start_form">CONTACT US</p>
+        <div class="form">
+            <p id="text_name">NAME :</p>
+            <input type="text" placeholder="enter youre full name" name=" name " id="name_jcb">
+            <p id="text_MAIL">EMAIL:</p>
+            <input type="EMAIL" placeholder="enter youre emali address" name=" EMAIL " id="EMAIL_jcb">
+            <p id="text_PHON">PHONE:</p>
+            <input type="phone" placeholder="enter youre phone number" name=" PHONE number " id="PHONE_jcb">
+            <button id="form_sub">submit</button>
+
+
+            <div class="multi_gender">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="other">
+            </div>
+
+        </div>
+
+
+        <div id="jcb_line"></div>
+        <div id="skill_sectionj"></div>
+        <h1 id="skill_INDJCB">JCB EQUIPMENT </h1>
+        <h1 id="skill_INDJCB2">CONSTRUCTION INDIA</h1>
+        <p id="jcb_words">In every corner of the world you'll find<br> a JCB machine.</p>
+        <p id="jcb_words2">JCB is one of the world’s top three manufacturers of<br>construction equipment. They employ
+            around 12,000 <br>people on four continents and sell their products in 150<br> countries through 2,000
+            dealer depot
+            locations.</p>
+        <p id="roll_jcb"> LEARN JOB READY SKILL </p>
+        <p id="arrow_logo"><i class="fa-solid fa-arrow-right fa-beat-fade" style="color: #e27012;"></i></p>
+        <div id="jcb_line2"></div>
+        <ul class="list_course">
+            <li id="my_list">THEORY</li>
+            <li id="my_list">PRACTICAL</li>
+            <li id="my_list">DRIVERY SKILL</li>
+            <li id="my_list">INTERNAL MACHINE PARTS</li>
+            <li id="my_list"> HOW TO OPERATE LOADER AND FRONT BUCKET</li>
+        </ul>
+        <div id="black_box3"> </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <div class="hash_256">
+        <img src="download.png" id="jcb_logo">
+        <p id="jcb_lives">TRANSFORMING LIVES WITH JCB BACKHOE LOADER</p>
+       
+    </div>
+
+
+
+    <!-- slide show -->
+    <div class="slide_show">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="image_response">
+                    <img src="jcbback images.jpg" class="d-block w-100" alt="..." style="height: 50rem; width: 50%;" id="img_rem">
+                </div>
+                <div class="carousel-item" id="image_response">
+                    <img src="jcbback images.jpg" class="d-block w-100" alt="..." style="height: 50rem;width: 50%;">
+                </div>
+                <div class="carousel-item" id="image_response">
+                    <img src="jcbback images.jpg" class="d-block w-100" alt="..." style="height: 50rem;width: 50%;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--------------------succes story  -------------------------------------- -->
+
+
+
+    <div class="success_stor">
+        <h1 id="JCB_PRODUCT">CONFORTABLE OPERATOR,</h1>
+        <h1 id="JCB_PRODUCT2">MORE PRODUCTIVE SUCCESS</h1>
+
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------------------------------------------- last divwork ------------------------------------------------->
+    <div class="last_jcbwork">
+
+
+
+
+        <div id="work_1">
+            <div id="mid_jcbwork">
+                <p id="mechanic_logo"><i class="fa-solid fa-gear"></i></p>
+            </div>
+        </div>
+
+        <div id="work_2">
+            <div id="mid_jcbwork">
+                <p id="mechanic_logo"><i class="fa-solid fa-ring"></i></p>
+            </div>
+        </div>
+
+        <div id="work_3">
+            <div id="mid_jcbwork">
+                <p id="mechanic_logo"><i class="fa-solid fa-tractor"></i></p>
+            </div>
+        </div>
+
+        <div id="work_4">
+            <div id="mid_jcbwork">
+                <p id="mechanic_logo"><i class="fa-solid fa-display"></i></p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-----------------slide show------------------------ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--------------------- -------------------------------------footer work jcb land page---------------------------------- ---------------------------->
+
+    <div class="footer_jcb">
+        <img src="download.png  " id="foot_id">
+        <h1 class="fotter_journey">SUCCESS WITH EVERY JOURNEY</h1>
+        <ul id="last_content">
+            <li id="jcb_flex">Corporate Responsibility</li>
+            <li id="jcb_flex">Legal Notice </li>
+            <li id="jcb_flex"> Privacy Policy</li>
+            <li id="jcb_flex">Disclosures </li>
+            <li id="jcb_flex">Site Map </li>
+        </ul>
+        <p id="jcb_limit">© 2023 J C Bamford Excavators Ltd.</p>
+        <p id="jcb_call">Call 7807240331</p>
+        <ul id="last_icon">
+            <li id="last_social"><i class="fa-brands fa-facebook"></i></li>
+            <li id="last_social"><i class="fa-brands fa-instagram"></i></li>
+            <li id="last_social"><i class="fa-brands fa-twitter"></i></li>
+            <li id="last_social"><i class="fa-brands fa-linkedin"></i></li>
+            <li id="last_social"><i class="fa-brands fa-youtube"></i></li>
+
+
+        </ul>
+
+    </div> 
+
+
+</body>
+
+</html>
